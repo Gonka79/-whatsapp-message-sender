@@ -32,7 +32,9 @@ Requirements
 3. Pillow
 
 tkinter (usually included with Python installations)
-**INSTALL**
+
+*****INSTALL*****
+
 You can install all necessary libraries using pip:
 
 $ pip install pandas selenium pillow (terminal & Console)
