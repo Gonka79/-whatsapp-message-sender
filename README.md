@@ -2,7 +2,7 @@
 Este programa automatiza el envío de mensajes personalizados a través de WhatsApp Web. Utilizando datos de un archivo Excel, el programa envía mensajes a múltiples contactos de manera eficiente.
 This project automates the process of sending personalized messages to clients via WhatsApp Web using Python, Selenium, and other essential libraries. The program reads client data from an Excel file and sends customized messages based on a pre-defined template.
 
-Features
+# Features
 
 Automated WhatsApp Messaging: Sends personalized messages to multiple clients using WhatsApp Web.
 
@@ -15,7 +15,7 @@ Graphical User Interface (GUI): Simple and intuitive interface built with Tkinte
 
 Logging: Tracks message sending activities in a log file (app.log) for easy debugging and monitoring.
 
-Requirements
+# Requirements
 
 *Python 3.x
 
@@ -37,25 +37,25 @@ tkinter (usually included with Python installations)
 
 You can install all necessary libraries using pip:
 
-$ pip install pandas selenium pillow (terminal & Console)
+$ `pip install pandas selenium pillow` (terminal & Console)
 
 or
 
-$ 'pip install -r requirements.txt'
+$ `pip install -r requirements.txt`
 
-git clone https://github.com/Gonka79/-whatsapp-message-sender.git
+$ `git clone https://github.com/Gonka79/-whatsapp-message-sender.git`
 
 cd whatsapp-message-sender
 
-#**Run the Program:**
+# **Run the Program:**
 
 You can execute the program using Python:
 
-$ python whatsapp_bot.py
+$ `python whatsapp_bot.py`
 
-#**Usage**
+# **Usage**
 
-##Prepare Your Data:
+## Prepare Your Data:
 
 Ensure you have an Excel file named contactos.xlsx in the same directory as the script.
 
