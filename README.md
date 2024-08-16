@@ -17,13 +17,13 @@ Logging: Tracks message sending activities in a log file (app.log) for easy debu
 
 # Requirements
 
-*Python 3.x
+**Python 3.x**
 
-*Google Chrome (must be installed on your system)
+**Google Chrome (must be installed on your system)**
 
-*ChromeDriver (compatible with your version of Chrome, included in the project)
+**ChromeDriver (compatible with your version of Chrome, included in the project)**
 
->Required Python Libraries:<
+## >Required Python Libraries:<
 
 1. pandas
 
@@ -33,6 +33,7 @@ Logging: Tracks message sending activities in a log file (app.log) for easy debu
 
 tkinter (usually included with Python installations)
 
+## 
 *****INSTALL*****
 
 You can install all necessary libraries using pip:
@@ -67,7 +68,46 @@ Nombre: The client's name.
 
 Mensaje: (Optional) A personalized message for the client. If left blank, the standard message template will be used.
 
-##Customize the Message Template:
+## Customize the Message Template:
 
 The message template is defined within the script (whatsapp_bot.py). To customize it, simply modify the mensaje_completo variable in the code:
 
+`mensaje_completo = (
+    f"Estimad@ {nombre},\n\n"
+    f"{mensaje_personalizado}\n\n"
+    "Esperamos que estés disfrutando de tu nuevo producto y que esté siendo el compañero perfecto para todas tus aventuras (¡o siestas!). "
+    "Tenemos una pequeña misión para ti, que no involucra salir en una búsqueda épica ni nada por el estilo. "
+    "Solo necesitamos tus súper habilidades de escritura para dejarnos una reseña en Google. ¡Prometemos que no te llevará más tiempo que el que tardas en decir 'sofá cama con apertura italiana'!\n\n"
+    "Deja que el mundo sepa qué tal te fue con nosotros y si te ha sacado alguna sonrisa (o varias). Tu opinión es muy valiosa y nos ayuda a seguir mejorando y creciendo. "
+    "¡Gracias por ser parte de nuestra familia y esperamos leerte pronto!\n\n"
+    "Puedes dejar tu reseña pinchando en este enlace mágico:\n\n"
+    "➡️ https://g.page/r/CaU_e6S1DYMIEBE/review ⬅️\n\n"
+    "Saludos cordiales, MERKADESCANSO HUELVA\n\n"
+    "P.D.: Si tu PRODUCTO ADQUIRIDO EN NUESTRA TIENDA comienza a hablarte, prométenos que será la primera cosa que mencionarás en la reseña. 😄"
+)`
+
+## Run the Program:
+
+Launch the program and click on "Enviar Mensajes". The program will automatically send the messages to all clients listed in the Excel file.
+
+## View Logs:
+
+## Customization
+
+Message Template: Edit the mensaje_completo variable within the enviar_mensajes() function in whatsapp_bot.py to modify the message template.
+
+Icon and Branding: Replace icono.ico, portada.png, and logo.png with your own images to customize the branding of the GUI.
+
+## Troubleshooting
+
+Message Not Sending: Ensure that ChromeDriver is correctly installed and compatible with your Chrome version.
+
+Blank Fields in Excel: Ensure that each client has a phone number and name. The message is optional but can be customized for each client.
+
+Error Logs: Check app.log for any errors or warnings during the message-sending process.
+
+## License
+
+This project is licensed under the MIT License. Feel free to use, modify, and distribute it as you see fit.
+
+Check the app.log file in the project directory for detailed logs of the message-sending process.
