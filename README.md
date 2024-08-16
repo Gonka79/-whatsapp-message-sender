@@ -41,4 +41,33 @@ $ pip install pandas selenium pillow (terminal & Console)
 
 or
 
-$ pip install -r requirements.txt
+$ 'pip install -r requirements.txt'
+
+git clone https://github.com/Gonka79/-whatsapp-message-sender.git
+
+cd whatsapp-message-sender
+
+#**Run the Program:**
+
+You can execute the program using Python:
+
+$ python whatsapp_bot.py
+
+#**Usage**
+
+##Prepare Your Data:
+
+Ensure you have an Excel file named contactos.xlsx in the same directory as the script.
+
+The Excel file should have the following columns:
+
+Telefono: The client's phone number (e.g., +1234567890).
+
+Nombre: The client's name.
+
+Mensaje: (Optional) A personalized message for the client. If left blank, the standard message template will be used.
+
+##Customize the Message Template:
+
+The message template is defined within the script (whatsapp_bot.py). To customize it, simply modify the mensaje_completo variable in the code:
+
